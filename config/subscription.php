@@ -28,7 +28,7 @@ return [
         ]
     ],
     'cancel_url' => '/settings',
-    'currency'       => 'AUD',
+    'currency'       => 'USA',
     'subscription' => [
         'model' => Flitty\Subscription\Models\Subscription::class,
         'foreign' => 'subscription_id',

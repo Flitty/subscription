@@ -27,8 +27,8 @@ class SubscriptionServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $migrationPath = __DIR__ . '/../migrations';
-        $configPath = __DIR__ . '/../config';
+        $migrationPath = __DIR__ . '/../../migrations';
+        $configPath = __DIR__ . '/../../config';
         $this->publishes([
             $migrationPath => database_path('migrations'),
             $configPath => config_path(),
@@ -42,7 +42,7 @@ class SubscriptionServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $configPath = __DIR__ . '/../config/subscription.php';
+        $configPath = __DIR__ . '/../../config/subscription.php';
         $this->mergeConfigFrom($configPath, 'subscription');
         $this->app->register(PayPalServiceProvider::class);
         $this->app->alias('PayPal', PayPal::class);

@@ -15,21 +15,21 @@ use Illuminate\Database\Eloquent\Model;
  * @property float $amount
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereAmount($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereDriver($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction wherePlan($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereSubscriptionId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereTransactionId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereAmount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereDriver($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction wherePlan($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereSubscriptionId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereTransactionId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereUpdatedAt($value)
  * @mixin \Eloquent
  * @property string $status
  * @property string|null $payer_id
  * @property string|null $message
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereMessage($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction wherePayerId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Transaction whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereMessage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction wherePayerId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Transaction whereStatus($value)
  */
 class Transaction extends Model
 {

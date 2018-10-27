@@ -45,7 +45,6 @@ trait Subscriber
     public function getSubscriptions(string $status = Subscription::LIVE_STATUS) : Collection
     {
         $cacheKey = $this->getId() . 'live-subscription-cache-key-' . $status;
-        Cache::forget($cacheKey);
         return $this->subscriptions =  Cache::remember($cacheKey, 1, function() use ($status) {
             $now = Carbon::now()->toDateTimeString();
             /** @var Builder $query */

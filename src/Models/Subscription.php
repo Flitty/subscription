@@ -16,33 +16,33 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property string|null $deleted_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Subscription\Models\SubscriptionCoupon $subscriptionCoupon
- * @property-read \Subscription\Models\SubscriptionType $subscriptionType
- * @method static \Illuminate\Database\Query\Builder|\Subscription\Models\Subscription onlyTrashed()
+ * @property-read \Flitty\Subscription\Models\SubscriptionCoupon $subscriptionCoupon
+ * @property-read \Flitty\Subscription\Models\SubscriptionType $subscriptionType
+ * @method static \Illuminate\Database\Query\Builder|\Flitty\Subscription\Models\Subscription onlyTrashed()
  * @method static bool|null restore()
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereExpireAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereUserId($value)
- * @method static \Illuminate\Database\Query\Builder|\Subscription\Models\Subscription withTrashed()
- * @method static \Illuminate\Database\Query\Builder|\Subscription\Models\Subscription withoutTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereExpireAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereUserId($value)
+ * @method static \Illuminate\Database\Query\Builder|\Flitty\Subscription\Models\Subscription withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|\Flitty\Subscription\Models\Subscription withoutTrashed()
  * @mixin \Eloquent
  * @property int|null $subscription_coupon_id
  * @property int $subscription_type_id
  * @property string $status
  * @property string|null $recurring_payment_id
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereRecurringPaymentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereStatus($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereSubscriptionCouponId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereSubscriptionTypeId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereRecurringPaymentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereSubscriptionCouponId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereSubscriptionTypeId($value)
  * @property string|null $suspended_at
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereSuspendedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereSuspendedAt($value)
  * @property string $driver
  * @property-read \App\User $subscriber
- * @method static \Illuminate\Database\Eloquent\Builder|\Subscription\Models\Subscription whereDriver($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Flitty\Subscription\Models\Subscription whereDriver($value)
  */
 class Subscription extends Model
 {
