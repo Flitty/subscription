@@ -86,7 +86,7 @@
      }
 </pre>
 
-<p>Optionl methods:</p>
+<p>Optional methods:</p>
 <pre>    
     public function cancelSubscription(CancelSubscriptionRequest $request)
     {
@@ -160,7 +160,7 @@
     $subscriber->getTypeSubscription($subscriptionTypeId);
 </pre>
 
-<p>Get all authentificated user subscription types</p>
+<p>Get all authentificated user subscriptions</p>
 <pre>
     $subscriber = Auth::user();
     $subscriber->getSubscriptions();
